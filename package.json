@@ -1,0 +1,30 @@
+{
+  "name": "sms-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cp ./public/mockServiceWorker.js ./dist && parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@twilio-paste/core": "^20.8.0",
+    "@twilio-paste/icons": "^12.2.3",
+    "react": "^18.2.0",
+    "msw": "^2.1.5",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "dist"
+    ]
+  }
+}
